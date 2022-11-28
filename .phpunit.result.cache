@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Warning":6,"Example\\ContohRecursiTest::testCoba":3,"Example\\ContohRecursiTest::testFactorial":3},"times":{"Warning":0.004,"Example\\ContohRecursiTest::testCoba":0.004,"Example\\ContohRecursiTest::testFactorial":0.004}}
