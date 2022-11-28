@@ -1,0 +1,43 @@
+@startuml
+
+entity KECAMATAN{
+*kecamatan_id: VARCHAR
+--
+*kecamatan_nama: VARCHAR
+}
+
+entity DESA{
+*desa_id: VARCHAR
+--
+*desa_nama: VARCHAR
+*kecamatan_id: VARCHAR
+}
+
+entity PRODI{
+*prodi_id: VARCHAR
+--
+*prodi_nama: VARCHAR
+}
+
+entity MAHASISWA{
+*nim: VARCHAR
+--
+*mahasiswa_nama: VARCHAR
+*prodi_id: VARCHAR
+*tahun_angkatan: VARCHAR
+}
+
+entity NILAI{
+*id: VARCHAR
+--
+*nim: VARCHAR
+*desa_id: VARCHAR
+*nilai: INT
+}
+KECAMATAN||--{DESA
+PRODI||--{MAHASISWA
+
+DESA||--{NILAI
+NILAI||--{MAHASISWA
+
+@enduml
